@@ -1,0 +1,10 @@
+<h1>Category of: {{ category }}</h1>
+
+<table class="table-posts">
+    <tr ng-repeat="post in posts">
+        <td class="date-column">{{ post.date }}</td>
+        <td><h3><a href="/#!/posts/{{ post.slug }}">{{ post.title }}</a></h3></td>
+    </tr>
+</table>
+
+<pagination ng-show="isPageable(totalItems, perPage)" total-items="totalItems" items-per-page="perPage" max-size="maxSize" ng-model="currentPage" ng-change="pageChanged()"></pagination>

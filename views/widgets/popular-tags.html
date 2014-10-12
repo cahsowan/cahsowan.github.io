@@ -1,0 +1,14 @@
+<div class="popular-tags">
+    <h2>
+        <span class="fa-stack">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-tags fa-stack-1x fa-inverse"></i>
+        </span>
+         Popular Tags
+    </h2>
+    <ul>
+        <li ng-repeat="tag in tags">
+            <a style="font-size: {{ tag.font_size }}pt" href="/#!/tags/{{ tag.slug }}" ># {{ tag.name }}</a>
+        </li>
+    </ul>
+</div>

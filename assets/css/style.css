@@ -1,0 +1,167 @@
+@import "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Merriweather+Sans:400,700,400italic,700italic|Merriweather:400,400italic,700,700italic|Bangers";
+
+body {
+    font-family: 'Merriweather',sans-serif;
+    font-size: 1.7em;
+    line-height: 1.8em;
+    padding-top: 50px;
+    background: #fff;
+    color: #333;
+}
+
+body > footer .container p {
+    margin: 30px 0;
+    padding: 20px 0;
+    border-top: solid 1px #ccc;
+    font-size: 0.85em;
+    color: #888;
+}
+
+.jumbotron {
+    padding-top: 30px;
+    background: #333;
+    background: #333 url('http://www.bootply.com/assets/example/pt_topo_l.png') repeat center center fixed;
+    /*background: #333 url('../img/bg_hader.png') repeat center center fixed;*/
+}
+.jumbotron h1, .jumbotron h3 { 
+    font-family: 'Bangers', cursive;
+    color: #eaeaea;
+}
+.jumbotron h1 { margin-top: 0;}
+.jumbotron h1 a { color: #eaeaea;}
+.jumbotron h1 a:hover { text-decoration: none;}
+.jumbotron .webicon {
+    position: absolute;
+    left: 50%;
+    top: 225px;
+    margin-left: -30px;
+}
+.jumbotron .webicon .fa-border {
+    color: #fff;
+    background: #4cae4c;
+    border: solid 5px #fff;
+    border-radius: 5px;
+}
+
+.posts-list { margin-top: 20px;}
+.posts-list article {
+    margin-bottom: 40px;
+    padding-bottom: 25px;
+}
+.post-date {
+    font-size: 0.9em;
+}
+h2.post-title {
+    margin-top: 10px; 
+}
+h2.post-title a:hover {
+    text-decoration: none;
+}
+.posts-list article hr { 
+    border-top-color: #eee;
+    margin-top: 0;
+}
+
+.fa-ul.recent-posts-list i {
+    margin-top: 4px;
+}
+
+.recent-posts, .popular-tags, .categories-tree .ads-banner {
+    margin-bottom: 35px;
+}
+.ads-banner img { margin: 10px 0;}
+
+.post-separator {
+    width: 40%;
+    border-bottom: solid 1px #eee;
+    margin-left: 30%;
+    margin-top: 20px;
+    position: relative;
+}
+.post-separator .dots {
+    width: 80px;
+    background: #fff;
+    color: #eee;
+    position: relative;
+    top: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.popular-tags ul {
+    padding-left: 15px;
+}
+.popular-tags ul li {
+    list-style: none;
+}
+
+.categories-tree h3 { margin: 5px 0;}
+.categories-tree ul { padding: 0; margin: 0;}
+.categories-tree li {
+    list-style: none;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: solid 1px #eaeaea;
+}
+.categories-tree div > ul > li:first-of-type {
+    margin-top: 0;
+    border: none;
+}
+.categories-tree div > ul > li:last-of-type {
+    margin-bottom: 10px;
+}
+.categories-tree div > ul > li > a {
+    margin-left: 20px;
+}
+.categories-tree li a {
+    margin-left: 42px;
+}
+.categories-tree .badge {
+    float: right;
+    margin: 2px 15px 0 0;
+    font-size: 1em;
+}
+.post-terms ul { 
+    padding: 0;
+    margin-bottom: 0;
+}
+.post-terms li { 
+    display: inline;
+    margin-right: 10px;
+}
+.post-terms li a {
+    color:#ccc;
+    font-size: 0.8em;
+}
+.read-more {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.table-posts {
+    width: 100%;
+}
+.table-posts td {
+    border-bottom: dashed 1px #ccc;
+}
+
+.scrollup {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    display: none;
+    background-color: rgba(0,0,0,.6);
+    color: #FFF;
+}
+.scrollup:hover { color: #4cae4c;}
+.scrollup i { margin-top: 10px;}
+
+.modal-body ul { padding-left: 10px;}
+.modal-body ul li { list-style: none;}
+
+@media (max-width: 720px){
+    .jumbotron .webicon{display:none}
+    .post-terms ul.pull-right{display:none}
+}
