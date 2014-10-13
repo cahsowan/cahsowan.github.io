@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('cahsowan', ['ngRoute', 'ngSanitize', 'ui.bootstrap'])
+angular.module('cahsowan', ['ngRoute', 'ngSanitize', 'ui.bootstrap', 'cgBusy'])
     .config(function($routeProvider, $locationProvider){
         $routeProvider
             .when('/', {
