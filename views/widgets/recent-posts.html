@@ -6,11 +6,13 @@
         </span>
          Recent Posts
     </h2>
-    <ul class="fa-ul recent-posts-list">
-        <li ng-repeat="post in recentPosts">
-            <a href="/#!/posts/{{ post.slug }}">
-              <i class="fa-li fa fa-angle-double-right"></i>{{ post.title }}
-            </a>
-        </li>
-    </ul>
+    <div cg-busy="myPromise">
+      <ul class="fa-ul recent-posts-list">
+          <li ng-repeat="post in recentPosts">
+              <a href="/#!/posts/{{ post.slug }}">
+                <i class="fa-li fa fa-angle-double-right"></i>{{ post.title }}
+              </a>
+          </li>
+      </ul>
+    </div>
 </div>

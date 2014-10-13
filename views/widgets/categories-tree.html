@@ -8,19 +8,21 @@
         </div>
 
         <!-- List group -->
-        <ul class="collapse"  collapse="listCollapsed">
-            <li ng-repeat="category in categories">
-                <a href="/#!/categories/{{ category.slug }}">
-                    <i class="fa fa-folder-open"></i> {{ category.name }} <span class="badge">{{ category.post_count }}</span>
-                </a>
-                <ul ng-if="category.children">
-                    <li ng-repeat="child in category.children">
-                        <a href="/#!/categories/{{ child.slug }}">
-                            <i class="fa fa-folder"></i> {{ child.name }} <span class="badge">{{ child.post_count }}</span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+        <div cg-busy="myPromise">
+            <ul class="collapse"  collapse="listCollapsed">
+                <li ng-repeat="category in categories">
+                    <a href="/#!/categories/{{ category.slug }}">
+                        <i class="fa fa-folder-open"></i> {{ category.name }} <span class="badge">{{ category.post_count }}</span>
+                    </a>
+                    <ul ng-if="category.children">
+                        <li ng-repeat="child in category.children">
+                            <a href="/#!/categories/{{ child.slug }}">
+                                <i class="fa fa-folder"></i> {{ child.name }} <span class="badge">{{ child.post_count }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

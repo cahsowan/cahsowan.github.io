@@ -36,7 +36,7 @@ angular.module('cahsowan', ['ngRoute', 'ngSanitize', 'ui.bootstrap'])
     })
 
     .run(function($rootScope, $modal, $location, $window){
-        $rootScope.apiBaseUrl = 'http://cahsowanblog.gopagoda.com/index.php';
+        $rootScope.apiBaseUrl = 'http://cahsowanblog.gopagoda.com';
         $rootScope.webBaseUrl = $window.location.origin;
 
         // Page title changed on every path changes

@@ -6,7 +6,7 @@ angular.module('cahsowan')
         
         $scope.getData = function(page){
             var page = typeof page === "undefined" ? 1 : page;
-            $http.get($rootScope.apiBaseUrl + '/api/search', { params: {q: $scope.keyword} })
+            $scope.myPromise = $http.get($rootScope.apiBaseUrl + '/api/search', { params: {q: $scope.keyword} })
                 .success(function(data){
                     $scope.posts = data.posts;
                     $scope.totalItems = data.pagination.total;

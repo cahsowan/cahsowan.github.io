@@ -22,6 +22,7 @@ var jsDir = [
         './assets/js/vendor/angular/angular.js',
         './assets/js/vendor/angular/angular-route.js',
         './assets/js/vendor/angular/angular-sanitize.js',
+        './assets/js/vendor/angular/angular-busy.js',
         './assets/js/vendor/angular/ui-bootstrap-tpls-0.11.0.js',
         './assets/js/vendor/underscore/underscore.js'
     ],

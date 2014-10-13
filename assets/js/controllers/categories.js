@@ -7,7 +7,7 @@ angular.module('cahsowan')
         $scope.getData = function(page){
             var page = typeof page === "undefined" ? 1 : page;
 
-            $http.get($rootScope.apiBaseUrl + '/api/categories/' + categoryName + '/posts', {params: {'page': page}}).success(function(data){
+            $scope.myPromise = $http.get($rootScope.apiBaseUrl + '/api/categories/' + categoryName + '/posts', {params: {'page': page}}).success(function(data){
                 $scope.posts = data.posts;
                 $scope.totalItems = data.pagination.total;
                 $scope.perPage = data.pagination.limit;

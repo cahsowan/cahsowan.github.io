@@ -1,49 +1,52 @@
-<div class="posts-list">
-    <article ng-repeat="post in posts">
-        <div class="post-date">
-            <i class="fa fa-calendar-o"></i> {{ post.date }}, 
-            <i class="fa fa-clock-o"></i> {{ post.time }}
-        </div>
-        <h2 class="post-title">
-            <a href="/#!/posts/{{ post.slug }}">{{ post.title }}</a>
-        </h2>
-        <div class="post-terms">
-            <ul class="pull-left">
-                <li ng-repeat="category in post.categories">
-                    <a href="/#!/categories/{{ category.slug }}">
-                        <i class="fa fa-folder-o"></i> {{ category.name }}
-                    </a> 
-                </li>
-            </ul>
-            <ul class="pull-right">
-                <li ng-repeat="tag in post.tags">
-                    <a href="/#!/tags/{{ tag.slug }}">
-                        <i class="fa fa-tag"></i> {{ tag.name }}
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="clearfix"></div>
-        <hr>
-
-        <div ng-if="post.content_more" class="post-body" ng-bind-html="post.content_first_part"></div>
-        
-        <div ng-if="post.content_more" class="read-more">
-            <a href="/#!/posts/{{ post.slug }}" class="btn btn-success" style="margin: auto"><i class="fa fa-angle-double-right"></i> Read more <i class="fa fa-angle-double-left"></i></a>
-        </div>
-
-        <!-- if post do not have content_more -->
-        <div ng-if="haveNo(post.content_more)" class="post-body" ng-bind-html="post.content"></div>
-
-        <div class="post-separator">
-            <div class="dots">
-                <small><i class="fa fa-gear"></i></small>
-                <i class="fa fa-gear"></i>
-                <small><i class="fa fa-gear"></i></small>
+<div cg-busy="myPromise">
+    <div class="posts-list">
+        <article ng-repeat="post in posts">
+            <div class="post-date">
+                <i class="fa fa-calendar-o"></i> {{ post.date }}, 
+                <i class="fa fa-clock-o"></i> {{ post.time }}
             </div>
-        </div>
-    </article>
+            <h2 class="post-title">
+                <a href="/#!/posts/{{ post.slug }}">{{ post.title }}</a>
+            </h2>
+            <div class="post-terms">
+                <ul class="pull-left">
+                    <li ng-repeat="category in post.categories">
+                        <a href="/#!/categories/{{ category.slug }}">
+                            <i class="fa fa-folder-o"></i> {{ category.name }}
+                        </a> 
+                    </li>
+                </ul>
+                <ul class="pull-right">
+                    <li ng-repeat="tag in post.tags">
+                        <a href="/#!/tags/{{ tag.slug }}">
+                            <i class="fa fa-tag"></i> {{ tag.name }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+            <hr>
+
+            <div ng-if="post.content_more" class="post-body" ng-bind-html="post.content_first_part"></div>
+            
+            <div ng-if="post.content_more" class="read-more">
+                <a href="/#!/posts/{{ post.slug }}" class="btn btn-success" style="margin: auto"><i class="fa fa-angle-double-right"></i> Read more <i class="fa fa-angle-double-left"></i></a>
+            </div>
+
+            <!-- if post do not have content_more -->
+            <div ng-if="haveNo(post.content_more)" class="post-body" ng-bind-html="post.content"></div>
+
+            <div class="post-separator">
+                <div class="dots">
+                    <small><i class="fa fa-gear"></i></small>
+                    <i class="fa fa-gear"></i>
+                    <small><i class="fa fa-gear"></i></small>
+                </div>
+            </div>
+        </article>
+    </div>
 </div>
+
 
 <div class="text-center">
     <pager ng-show="isPageable(totalItems, perPage)" total-items="totalItems" items-per-page="perPage" max-size="maxSize" ng-model="currentPage" ng-change="pageChanged()"></pager>

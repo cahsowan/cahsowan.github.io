@@ -6,7 +6,7 @@ angular.module('cahsowan')
             minFontSize = 11,
             fontSpread = maxFontSize - minFontSize;
 
-        $http.get($rootScope.apiBaseUrl + '/api/tags').success(function(data){
+        $scope.myPromise = $http.get($rootScope.apiBaseUrl + '/api/tags').success(function(data){
             // maybe we need to apply filter for minimum post_count number
 
             var max = _.max(data.tags, function(tag){ return tag.post_count }).post_count,

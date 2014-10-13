@@ -73,7 +73,7 @@ h2.post-title a:hover {
 
 .post-separator {
     width: 40%;
-    border-bottom: solid 1px #eee;
+    border-bottom: solid 1px #ccc;
     margin-left: 30%;
     margin-top: 20px;
     position: relative;
@@ -81,7 +81,7 @@ h2.post-title a:hover {
 .post-separator .dots {
     width: 80px;
     background: #fff;
-    color: #eee;
+    color: #ccc;
     position: relative;
     top: 15px;
     margin: auto;
@@ -130,7 +130,7 @@ h2.post-title a:hover {
     margin-right: 10px;
 }
 .post-terms li a {
-    color:#ccc;
+    color:#888;
     font-size: 0.8em;
 }
 .read-more {
