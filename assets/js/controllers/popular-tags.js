@@ -2,8 +2,8 @@
 
 angular.module('cahsowan')
     .controller('PopularTagsCtrl', function($scope, $http, $rootScope){
-        var maxFontSize = 18,
-            minFontSize = 11,
+        var maxFontSize = 26,
+            minFontSize = 14,
             fontSpread = maxFontSize - minFontSize;
 
         $scope.myPromise = $http.get($rootScope.apiBaseUrl + '/api/tags').success(function(data){
