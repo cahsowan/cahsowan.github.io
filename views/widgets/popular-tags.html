@@ -9,7 +9,7 @@
     <div cg-busy="myPromise">
       <ul>
         <li ng-repeat="tag in tags">
-            <a ng-style="font-size: {{ tag.font_size }}px" href="/#!/tags/{{ tag.slug }}" ># {{ tag.name }}</a>
+            <a ng-style="setFontSize(tag.font_size)" href="/#!/tags/{{ tag.slug }}" ># {{ tag.name }}</a>
         </li>
     </ul>
     </div>

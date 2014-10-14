@@ -20,4 +20,8 @@ angular.module('cahsowan')
 
             $scope.tags = tags;
         })
+
+        $scope.setFontSize = function(fontSize){
+            return {'font-size': fontSize + 'px'}; 
+        }
     })
