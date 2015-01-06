@@ -1,0 +1,109 @@
+header.intro
+  .intro-body
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          h1.brand-heading Web Developer
+          p.intro-text Experienced with modern tools and workflow in web development.
+          a.btn.btn-circle.page-scroll(href="#about")
+            i.fa.fa-angle-double-down.animated
+
+//- About Section
+section#about.container.content-section.text-center
+  .row
+    .col-lg-12
+      h2 About Me
+      hr.star-light
+      p
+        | I am Taufiqur Rohman, i work at Kafila International Islamic School (
+        a(href="http://www.kafila.or.id") www.kafila.or.id
+        | ), i teach computer with practical method, and focused on resulting a product, to help students  build their skills.
+      p
+        | I developed my own web based e-learning system for the school using 
+        a(href="http://www.laravel.com") Laravel PHP Framework
+        | , it serves students many lessons with video tutorials, quizzes and games. My other project is a web based application for Quran examination, it store scores for student memorization of quran in every pages with multiple criteria.
+      p.text-center
+        a.btn.btn-lg.btn-outline(href="http://www.linkedin.com/in/taufiqurrohman")
+          span.fa-stack.text-primary
+            i.fa.fa-circle.fa-stack-2x
+            i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+          | Me on LinkedIn
+
+//- Portfolio section
+section#portfolio.content-section.text-center
+  .portfolio-section
+    .container
+      .col-lg-12
+        h2 Portfolio
+        hr.star-primary
+      .row
+        .col-sm-4.portfolio-item
+          a.portfolio-link(data-target="#portfolioModal1", data-toggle="modal")
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src="assets/img/kafila.png", alt="")
+        .col-sm-4.portfolio-item
+          a.portfolio-link(data-target="#portfolioModal2", data-toggle="modal")
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src="assets/img/psb.png", alt="")
+        .col-sm-4.portfolio-item
+          a.portfolio-link(data-target="#portfolioModal3", data-toggle="modal")
+            .caption
+              .caption-content
+                i.fa.fa-search-plus.fa-3x
+            img.img-responsive(src="assets/img/lab.png", alt="")
+
+#portfolioModal1.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+  .modal-content
+    .close-modal(data-dismiss="modal")
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Kafila Website
+            hr.star-primary
+            img.img-responsive.img-centered(src="assets/img/kafila.png", alt="")
+            p
+              | The Website represent Kafila International Islamic School, it"s profile, vision and mission, including news and agenda.
+            button.btn.btn-default(type="button", data-dismiss="modal")
+              i.fa.fa-times
+              | Close
+#portfolioModal2.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+  .modal-content
+    .close-modal(data-dismiss="modal")
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Kafila Student Enrollment
+            hr.star-primary
+            img.img-responsive.img-centered(src="assets/img/psb.png", alt="")
+            p
+              | Website for student enrollment, it"s capture register data and documents, and the goal is to make registration proccess easier and reach a wider area.
+            button.btn.btn-default(type="button", data-dismiss="modal")
+              i.fa.fa-times
+              | Close
+#portfolioModal3.portfolio-modal.modal.fade(tabindex="-1", role="dialog", aria-hidden="true")
+  .modal-content
+    .close-modal(data-dismiss="modal")
+      .lr
+        .rl
+    .container
+      .row
+        .col-lg-8.col-lg-offset-2
+          .modal-body
+            h2 Kafila Computer Laboratory
+            hr.star-primary
+            img.img-responsive.img-centered(src="assets/img/lab.png", alt="")
+            p
+              | This is a local web based application, serve as e-learning system, with many features: video tutorials, games and quizzes.
+            button.btn.btn-default(type="button", data-dismiss="modal")
+              i.fa.fa-times
+              | Close

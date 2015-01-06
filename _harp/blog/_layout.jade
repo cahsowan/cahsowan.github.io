@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="")
+    meta(name="author", content="")
+    title Taufik Rahman - Web Developer and Teacher
+    link(href="/assets/css/bootstrap.min.css", rel="stylesheet")
+    link(href="/assets/css/font-awesome.css", rel="stylesheet", type="text/css")
+    link(href="/assets/css/grayscale.css" rel="stylesheet" )
+  body
+    // Navigation
+    != partial("../partials/_navbar")
+
+    .container
+      div.upper-blank
+        h1 Blog <small>ikatlah ilmu dengan menulisnya</small>
+        hr
+          
+      .row
+        .col-md-8.col-md-offset-2
+          != yield
+  
+    //- Footer
+    footer
+      .container.text-center
+        p Copyright &#169; cahsowan.github.io 2014
+    
+    //- jQuery Version 1.11.0
+    script(src="/assets/js/jquery-1.11.2.min.js")
+    script(src="/assets/js/list.js")
+    script(src="/assets/js/list.pagination.js")
+    script.
+      var monkeyList = new List('articles', {
+        valueNames: ['article-title'],
+        page: 5,
+        plugins: [ ListPagination({}) ] 
+      });

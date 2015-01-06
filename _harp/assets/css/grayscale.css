@@ -36,6 +36,20 @@ p {
     line-height: 1.5;
 }
 
+.list-group a div { margin-left: 45px; }
+.list-group a span.fa-stack { float: left; }
+.list-group a h4 {
+    margin: 5px 0;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+.list-group p {
+    margin: 0;
+    font-size: 14px;
+    color: #ff9900;
+}
+
 @media(min-width:767px) {
     p {
         margin: 0 0 35px;
@@ -59,6 +73,12 @@ a:focus {
 
 .light {
     font-weight: 400;
+}
+
+.upper-blank {
+    margin: 90px 0 25px;
+    padding-top: 25px;
+    /*border-top: solid 1px #555;*/
 }
 
 .navbar-custom {
@@ -214,7 +234,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -231,7 +251,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -251,12 +271,11 @@ a:focus {
 .content-section {
     padding-top: 100px;
 }
-
+.portfolio-link { cursor: pointer;}
 .portfolio-section {
     width: 100%;
     padding: 50px 0;
     color: #000;
-    /*background: url(../img/downloads-bg.jpg) no-repeat center center scroll;*/
     background-color: #fff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -415,7 +434,7 @@ hr.star-primary:after {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(17,80,93,.8);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -532,7 +551,7 @@ hr.star-primary:after {
     color: #18bc9c;
     background: #fff;
 }
-
+i.fa, .fa-stack { margin-right: 5px;}
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
 }

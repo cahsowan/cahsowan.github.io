@@ -1,0 +1,14 @@
+#articles
+  p: input(placeholder="Type to search").form-control.input-lg.search
+  
+  .list-group.list
+    each article, slug in public.blog._data
+      a(href="/blog/#{ slug }.html").list-group-item
+        span.fa-stack.fa-2x
+          i.fa.fa-circle.fa-stack-2x
+          i.fa.fa-flag.fa-stack-1x.fa-inverse
+        div
+          h4.list-group-item-heading.article-title= article.title
+          p.list-group-item-text= article.publish
+          
+  ul.pagination
