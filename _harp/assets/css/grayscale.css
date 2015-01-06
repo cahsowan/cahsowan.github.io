@@ -78,7 +78,10 @@ a:focus {
 .upper-blank {
     margin: 90px 0 25px;
     padding-top: 25px;
-    /*border-top: solid 1px #555;*/
+}
+
+.upper-blank hr {
+    border-bottom: 1px solid rgba(255,255,255,.3);
 }
 
 .navbar-custom {
@@ -554,4 +557,26 @@ hr.star-primary:after {
 i.fa, .fa-stack { margin-right: 5px;}
 body {
     webkit-tap-highlight-color: rgba(255,255,255,.2);
+}
+
+#disqus_thread {
+  margin-top: 25px;
+  padding-top: 25px;
+}
+
+.post-separator {
+  width: 40%;
+  border-bottom: solid 1px #ccc;
+  margin-left: 30%;
+  margin-top: 30px;
+  position: relative;
+}
+.post-separator .dots {
+  width: 80px;
+  background: #000;
+  color: #ccc;
+  position: relative;
+  top: 10px;
+  margin: auto;
+  text-align: center;
 }
