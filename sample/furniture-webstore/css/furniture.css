@@ -48,3 +48,15 @@ ul.fa-ul > li i {
 .empty-space {
     height: 50px;
 }
+
+.grayscale {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.blur {
+    -webkit-filter: blur(1px);
+    -webkit-filter: opacity(.5);
+    filter: blur(1px);
+    filter: opacity(.5);
+}
